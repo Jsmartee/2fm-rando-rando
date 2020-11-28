@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FM Rando Rando</title>
+    <script type="text/javascript" src="main.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .tab {
+          display: inline-table;
+          margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>2FM Rando Rando</h1>
+
+    <div class='tab'>
+        <h2>Settings</h2>
+        <div>
+            <h4>Leveling</h4>
+            <p id='level'>Default</p>
+
+            <h4>Level Up Abilities</h4>
+            <p class="setting">Default</p>
+
+            <h4>Randomize Bonus Modifiers</h4>
+            <p class="offOn">Default</p>
+
+            <h4>Randomize Stats</h4>
+            <p class="offOn">Default</p>
+
+            <h4>Randomize Keyblade Stats</h4>
+            <p id="keybladeStats">Default</p>
+        </div>
+
+        <div>
+            <h4>EXP Multiplier</h4>
+            <p id="expMainMult">Default</p>
+
+            <h4>Valor EXP Multiplier</h4>
+            <p class="expMult">Default</p>
+
+            <h4>Wisdom EXP Multiplier</h4>
+            <p class="expMult">Default</p>
+
+            <h4>Limit EXP Multiplier</h4>
+            <p class="expMult">Default</p>
+
+            <h4>Master EXP Multiplier</h4>
+            <p class="expMult">Default</p>
+
+            <h4>Final EXP Multiplier</h4>
+            <p class="expMult">Default</p>
+        </div>
+    </div>
+
+    <div class='tab'>
+        <h2>Worlds</h2>
+
+        <h4>STT</h4>
+        <p class="world" id='STT'>Default</p>
+
+        <h4>TT</h4>
+        <p class="world" id='TT'>Default</p>
+
+        <h4>HB</h4>
+        <p class="world" id='HB'>Default</p>
+
+        <h4>CoR</h4>
+        <p class="world" id='CoR'>Default</p>
+
+        <h4>BC</h4>
+        <p class="world" id='BC'>Default</p>
+
+        <h4>OC</h4>
+        <p class="world" id='OC'>Default</p>
+
+        <h4>AG</h4>
+        <p class="world" id='AG'>Default</p>
+
+        <h4>LoD</h4>
+        <p class="world" id="LoD">Default</p>
+
+        <h4>100AW</h4>
+        <p class="world" id="AW">Default</p>
+
+        <h4>AT</h4>
+        <p class="world" id="AT">Default</p>
+
+        <h4>PL</h4>
+        <p class="world" id='PL'>Default</p>
+
+        <h4>DC</h4>
+        <p class="world" id='DC'>Default</p>
+
+        <h4>TR</h4>
+        <p class="world" id='TR'>Default</p>
+
+        <h4>HT</h4>
+        <p class="world" id='HT'>Default</p>
+
+        <h4>PR</h4>
+        <p class="world" id='PR'>Default</p>
+
+        <h4>SP</h4>
+        <p class="world" id='SP'>Default</p>
+
+        <h4>TWTNW</h4>
+        <p class="world" id='TWTNW'>Default</p>
+    </div>
+    
+    <div class='tab'>
+        <h2>Include</h2>
+
+        <h4>Keyblade Abilities</h4>
+        <p id='keybladeAbilities'>Default</p>
+
+        <h4>Donald's Abilities</h4>
+        <p class='offOn'>Default</p>
+
+        <h4>Goofy's Abilities</h4>
+        <p class='offOn'>Default</p>
+
+        <h4>Absent Silhouettes</h4>
+        <p class='setting'>Default</p>
+
+        <h4>Data Organization XIII</h4>
+        <p class='setting'>Default</p>
+
+        <h4>Olympus Cups</h4>
+        <p class='setting'>Default</p>
+
+        <h4>Hades Cup</h4>
+        <p class='offOn'>Default</p>
+
+        <h4>Lingering Will</h4>
+        <p class='offOn'>Default</p>
+
+        <h4>Sephiroth</h4>
+        <p class='offOn'>Default</p>
+
+        <h4>Ultima Weapon</h4>
+        <p class='offOn'>Default</p>
+
+        <h4>Final Form</h4>
+        <p class='offOn'>Default</p>
+
+        <h4>Form Abilities</h4>
+        <p class='setting'>Default</p>
+
+        <h4>Form Growth Abilities</h4>
+        <p class='setting'>Default</p>
+
+        <h4>Form MAX Growth Abilities</h4>
+        <p class='offOn'>Default</p>
+
+        <h4>Synthesis Rewards</h4>
+        <p class='offOn'>Default</p>
+    </div>
+
+    <div class='tab'>
+        <h2>Experimental</h2>
+
+        <h4>Randomize Bosses</h4>
+        <p class='offOn'>Default</p>
+
+        <h4>Randomize Enemies</h4>
+        <p class='offOn'>Default</p>
+    </div>
+
+    <button id="random" onclick="randomize()">Randomize</button>
+    
+</body>
+</html>
