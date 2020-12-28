@@ -10,30 +10,30 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        
+
         .tab {
-          display: inline-table;
-          margin: 10px;
+            display: inline-table;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
     <h1>2FM Rando Rando</h1>
 
-    <div class='tab'>
+    <div class="tab" id="settings">
         <h2>Settings</h2>
         <div>
             <h4>Leveling</h4>
-            <p id='level'>Default</p>
+            <p id="leveling">Default</p>
 
             <h4>Level Up Abilities</h4>
-            <p class="setting">Default</p>
+            <p class="setting" id="abilities">Default</p>
 
             <h4>Randomize Bonus Modifiers</h4>
-            <p class="offOn">Default</p>
+            <p class="offOn" id="bonusModifiers">Default</p>
 
             <h4>Randomize Stats</h4>
-            <p class="offOn">Default</p>
+            <p class="offOn" id="stats">Default</p>
 
             <h4>Randomize Keyblade Stats</h4>
             <p id="keybladeStats">Default</p>
@@ -41,140 +41,143 @@
 
         <div>
             <h4>EXP Multiplier</h4>
-            <p id="expMainMult">Default</p>
+            <p id="expMultiplier">Default</p>
 
             <h4>Valor EXP Multiplier</h4>
-            <p class="expMult">Default</p>
+            <p class="expMult" id="valorEXP">Default</p>
 
             <h4>Wisdom EXP Multiplier</h4>
-            <p class="expMult">Default</p>
+            <p class="expMult" id="wisdomEXP">Default</p>
 
             <h4>Limit EXP Multiplier</h4>
-            <p class="expMult">Default</p>
+            <p class="expMult" id="limitEXP">Default</p>
 
             <h4>Master EXP Multiplier</h4>
-            <p class="expMult">Default</p>
+            <p class="expMult" id="masterEXP">Default</p>
 
             <h4>Final EXP Multiplier</h4>
-            <p class="expMult">Default</p>
+            <p class="expMult" id="finalEXP">Default</p>
         </div>
     </div>
 
-    <div class='tab'>
+    <div class="tab" id="worlds">
         <h2>Worlds</h2>
 
         <h4>STT</h4>
-        <p class="world" id='STT'>Default</p>
+        <p class="world" id="simulatedTwilightTown">Default</p>
 
         <h4>TT</h4>
-        <p class="world" id='TT'>Default</p>
+        <p class="world" id="twilightTown">Default</p>
 
         <h4>HB</h4>
-        <p class="world" id='HB'>Default</p>
+        <p class="world" id="hollowBastion">Default</p>
 
         <h4>CoR</h4>
-        <p class="world" id='CoR'>Default</p>
+        <p class="world" id="cavernOfRemembrance">Default</p>
 
         <h4>BC</h4>
-        <p class="world" id='BC'>Default</p>
+        <p class="world" id="beastsCastle">Default</p>
 
         <h4>OC</h4>
-        <p class="world" id='OC'>Default</p>
+        <p class="world" id="olympus">Default</p>
 
         <h4>AG</h4>
-        <p class="world" id='AG'>Default</p>
+        <p class="world" id="agrabah">Default</p>
 
         <h4>LoD</h4>
-        <p class="world" id="LoD">Default</p>
+        <p class="world" id="landOfDragons">Default</p>
 
         <h4>100AW</h4>
-        <p class="world" id="AW">Default</p>
+        <p class="world" id="pooh">Default</p>
 
         <h4>AT</h4>
-        <p class="world" id="AT">Default</p>
+        <p class="world" id="atlantica">Default</p>
 
         <h4>PL</h4>
-        <p class="world" id='PL'>Default</p>
+        <p class="world" id="prideLands">Default</p>
 
         <h4>DC</h4>
-        <p class="world" id='DC'>Default</p>
+        <p class="world" id="disneyCastle">Default</p>
 
         <h4>TR</h4>
-        <p class="world" id='TR'>Default</p>
+        <p class="world" id="timelessRiver">Default</p>
 
         <h4>HT</h4>
-        <p class="world" id='HT'>Default</p>
+        <p class="world" id="halloweenTown">Default</p>
 
         <h4>PR</h4>
-        <p class="world" id='PR'>Default</p>
+        <p class="world" id="portRoyal">Default</p>
 
         <h4>SP</h4>
-        <p class="world" id='SP'>Default</p>
+        <p class="world" id="spaceParanoids">Default</p>
 
         <h4>TWTNW</h4>
-        <p class="world" id='TWTNW'>Default</p>
+        <p class="world" id="twtnw">Default</p>
     </div>
-    
-    <div class='tab'>
+
+    <div class="tab" id="include">
         <h2>Include</h2>
 
         <h4>Keyblade Abilities</h4>
-        <p id='keybladeAbilities'>Default</p>
+        <p id="keybladeAbilities">Default</p>
 
         <h4>Donald's Abilities</h4>
-        <p class='offOn'>Default</p>
+        <p class="offOn" id="donaldAbilities">Default</p>
 
         <h4>Goofy's Abilities</h4>
-        <p class='offOn'>Default</p>
+        <p class="offOn" id="goofyAbilities">Default</p>
 
         <h4>Absent Silhouettes</h4>
-        <p class='setting'>Default</p>
+        <p class="setting" id="absentSilhouettes">Default</p>
 
         <h4>Data Organization XIII</h4>
-        <p class='setting'>Default</p>
+        <p class="setting" id="dataOrganizationXIII">Default</p>
 
         <h4>Olympus Cups</h4>
-        <p class='setting'>Default</p>
+        <p class="setting" id="olympusCups">Default</p>
 
         <h4>Hades Cup</h4>
-        <p class='offOn'>Default</p>
+        <p class="offOn" id="hadesCup">Default</p>
 
         <h4>Lingering Will</h4>
-        <p class='offOn'>Default</p>
+        <p class="offOn" id="terra">Default</p>
 
         <h4>Sephiroth</h4>
-        <p class='offOn'>Default</p>
+        <p class="offOn" id="sephiroth">Default</p>
 
         <h4>Ultima Weapon</h4>
-        <p class='offOn'>Default</p>
+        <p class="offOn" id="ultimaWeapon">Default</p>
 
         <h4>Final Form</h4>
-        <p class='offOn'>Default</p>
+        <p class="offOn" id="finalForm">Default</p>
 
         <h4>Form Abilities</h4>
-        <p class='setting'>Default</p>
+        <p class="setting" id="formAbilities">Default</p>
 
         <h4>Form Growth Abilities</h4>
-        <p class='setting'>Default</p>
+        <p class="setting" id="growthAbilities">Default</p>
 
         <h4>Form MAX Growth Abilities</h4>
-        <p class='offOn'>Default</p>
+        <p class="offOn" id="maxGrowthAbilities">Default</p>
 
         <h4>Synthesis Rewards</h4>
-        <p class='offOn'>Default</p>
+        <p class="offOn" id="synthItems">Default</p>
     </div>
 
-    <div class='tab'>
+    <div class="tab">
         <h2>Experimental</h2>
 
         <h4>Randomize Bosses</h4>
-        <p class='offOn'>Default</p>
+        <p class="offOn">Default</p>
 
         <h4>Randomize Enemies</h4>
-        <p class='offOn'>Default</p>
+        <p class="offOn">Default</p>
     </div>
 
-    <button id="random" onclick="randomize()">Randomize</button>
-    
+    <div class="tab" style="width: 300px">
+        <button id="random" onclick="randomize()">Randomize</button>
+        <p><a id="randoLink" target="_blank">Link with settings</a></p>
+        <p><b>Note:</b> As the site doesn't support including experimental settings in the link, you will need to set these manually.</p>
+    </div>
 </body>
 </html>
