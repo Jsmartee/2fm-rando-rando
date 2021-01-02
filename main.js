@@ -79,6 +79,11 @@ function randomize() {
     elem.innerHTML = keyAbilities[keyAbleSetting];
     allSettings = setSettings(allSettings, elem, keyAbleSetting);
 
+    var reportDepthSetting = Math.floor(Math.random() * reportSettings.length);
+    elem = document.getElementById("reportDepth");
+    elem.innerHTML = reportSettings[reportDepthSetting];
+    allSettings = setSettings(allSettings, elem, reportDepthSetting);
+
     var baseEXPSetting = Math.floor(Math.random() * exp.length);
     elem = document.getElementById("expMultiplier");
     elem.innerHTML = exp[baseEXPSetting];
@@ -127,6 +132,8 @@ var exp = ["1x", "1.5x", "2x", "3x", "5x"];
 var form = ["1x", "2x", "3x", "4x", "5x"];
 
 var keyAbilities = ["Vanilla", "Support", "Action/Support"];
+
+var reportSettings = ["First Visits", "Second Visits", "Datas"];
 
 var worlds = [
     "simulatedTwilightTown",
