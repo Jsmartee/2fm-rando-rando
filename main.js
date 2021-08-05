@@ -48,15 +48,49 @@ function randomize() {
     }
 
     for (var i = 0; i < offOron.length; i++) {
-        var randomItem = Math.floor(Math.random() * on.length);
-        offOron[i].innerHTML = on[randomItem];
-        allSettings = setSettings(allSettings, offOron[i], randomItem);
+        if(document.getElementById('tourney').checked) {
+            if(offOron[i].id === "hadesCup") {
+                offOron[i].innerHTML = on[0];
+                allSettings = setSettings(allSettings, offOron[i], 0);
+                console.log('hades cup off');
+            }
+            else {
+                var randomItem = Math.floor(Math.random() * on.length);
+                offOron[i].innerHTML = on[randomItem];
+                allSettings = setSettings(allSettings, offOron[i], randomItem);
+            }
+        }
+        else {
+            var randomItem = Math.floor(Math.random() * on.length);
+            offOron[i].innerHTML = on[randomItem];
+            allSettings = setSettings(allSettings, offOron[i], randomItem);
+        }
     }
 
     for (var i = 0; i < formMults.length; i++) {
-        var randomItem = Math.floor(Math.random() * form.length);
-        formMults[i].innerHTML = form[randomItem];
-        allSettings = setSettings(allSettings, formMults[i], randomItem);
+        if(document.getElementById('tourney').checked) {
+            if(formMults[i].id === "valorEXP") {
+                formMults[i].innerHTML = form[4];
+                allSettings = setSettings(allSettings, formMults[i], 4);
+                console.log('valor x5');
+            }
+            else {
+                var randomItem = Math.floor(Math.random() * form.length);
+                if(randomItem < 2) {
+                    formMults[i].innerHTML = form[2];
+                    allSettings = setSettings(allSettings, formMults[i], 2);
+                }
+                else {
+                    formMults[i].innerHTML = form[randomItem];
+                    allSettings = setSettings(allSettings, formMults[i], randomItem);
+                }
+            }
+        }
+        else {
+            var randomItem = Math.floor(Math.random() * form.length);
+            formMults[i].innerHTML = form[randomItem];
+            allSettings = setSettings(allSettings, formMults[i], randomItem);
+        }
     }
 
     for (var i = 0; i < worldSettings.length; i++) {
@@ -84,10 +118,18 @@ function randomize() {
     elem.innerHTML = reportSettings[reportDepthSetting];
     allSettings = setSettings(allSettings, elem, reportDepthSetting);
 
-    var baseEXPSetting = Math.floor(Math.random() * exp.length);
-    elem = document.getElementById("expMultiplier");
-    elem.innerHTML = exp[baseEXPSetting];
-    allSettings = setSettings(allSettings, elem, baseEXPSetting);
+    if(document.getElementById('tourney').checked) {
+        document.getElementById("expMultiplier").innerHTML = exp[4];
+        allSettings = setSettings(allSettings, document.getElementById("expMultiplier"), 4);
+        console.log('tourney base xp x5');
+    }
+    else {
+        var baseEXPSetting = Math.floor(Math.random() * exp.length);
+        elem = document.getElementById("expMultiplier");
+        elem.innerHTML = exp[baseEXPSetting];
+        allSettings = setSettings(allSettings, elem, baseEXPSetting);
+    }
+    
 
     worlds = shuffle(worlds);
 
